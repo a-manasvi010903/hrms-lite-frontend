@@ -1,16 +1,92 @@
-# React + Vite
+# HRMS Lite - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern HR Management System interface built with React.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📊 Dashboard with statistics
+- 👥 Employee Management
+- ✅ Attendance Tracking
+- 🎨 Smooth animations
+- 📱 Responsive design
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** - UI library
+- **Vite** - Build tool
+- **React Router** - Navigation
+- **Framer Motion** - Animations
+- **Axios** - API calls
+- **Lucide React** - Icons
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Setup Environment
+
+Create `.env` file:
+
+```env
+VITE_API_URL=http://localhost:8000
+```
+
+### 3. Run Dev Server
+
+```bash
+npm run dev
+```
+
+Visit: http://localhost:5173
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Output will be in `dist/` folder.
+
+## Project Structure
+
+```
+src/
+├── api/             # API configuration
+├── components/      # Reusable components
+│   ├── common/      # Loaders, modals, etc.
+│   ├── layout/      # Sidebar, layout
+│   ├── employees/   # Employee components
+│   └── attendance/  # Attendance components
+├── pages/           # Main pages
+├── styles/          # CSS files
+├── utils/           # Helper functions
+├── App.jsx          # Main app
+└── main.jsx         # Entry point
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+## Pages
+
+- **Dashboard** (`/`) - Overview and statistics
+- **Employees** (`/employees`) - Manage employees
+- **Attendance** (`/attendance`) - Track attendance
+
+## Deployment
+live link - [Live Demo](https://hrms-lite-frontend-pi.vercel.app/)
+
+2. Upload `dist/` folder to Netlify
+3. Configure SPA redirects
+4. Done!
+
+## License
+
+MIT
