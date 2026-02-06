@@ -281,7 +281,7 @@ const Sidebar = ({ isOpen, onToggle }) => {
               HRMS Lite v1.0
             </p>
             <p style={{ fontSize: 'var(--text-xs)', opacity: 0.8 }}>
-              © 2024 All rights reserved
+              © 2026 All rights reserved
             </p>
           </motion.div>
         </div>
